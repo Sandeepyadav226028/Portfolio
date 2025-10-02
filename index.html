@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep - Web Developer Portfolio</title>
+    
+    <!-- Load Tailwind CSS (Must remain here) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-dark': '#1e293b', // Slate-800 equivalent
+                        'secondary-dark': '#334155', // Slate-700 equivalent
+                        'accent-blue': '#3b82f6', // Blue-500
+                        'light-text': '#f1f5f9', // Slate-100
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- LINK TO EXTERNAL CSS FILE -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Lucide icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        // Call the globally available function after script load
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof lucide !== 'undefined' && typeof lucide.createIcons === 'function') {
+                lucide.createIcons();
+            }
+        });
+    </script>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-primary-dark/95 backdrop-blur-sm shadow-lg">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center max-w-7xl">
+            <a href="#" class="text-2xl font-bold text-accent-blue tracking-wider">SANDEEP</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-light-text hover:text-accent-blue transition duration-300">About</a>
+                <a href="#tech" class="text-light-text hover:text-accent-blue transition duration-300">Skills</a>
+                <a href="#projects" class="text-light-text hover:text-accent-blue transition duration-300">Projects</a>
+                <a href="#contact" class="text-light-text hover:text-accent-blue transition duration-300">Contact</a>
+            </div>
+            <a href="#contact" class="hidden md:block bg-accent-blue hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300">Hire Me</a>
+            <button class="md:hidden text-light-text">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section (Full Background Spline) -->
+        <section id="hero" class="relative overflow-hidden min-h-screen flex items-center justify-center">
+
+            <!-- Spline Background Container -->
+            <div class="absolute inset-0 z-0">
+                <iframe 
+                    src="https://my.spline.design/orb-iUxtEs6Jxth7ygMXzJSPxsSP/" 
+                    frameborder="0" 
+                    width="100%" 
+                    height="100%"
+                    title="Sandeep's 3D Orb Spline Graphic Background"
+                    class="w-full h-full"
+                ></iframe>
+            </div>
+
+            <!-- Hero Content Overlay -->
+            <div class="container mx-auto px-4 max-w-7xl relative z-10 py-16 md:py-32">
+                
+                <!-- Hero Text (Centered and wrapped for readability) -->
+                <div class="max-w-xl mx-auto p-8 rounded-2xl border border-secondary-dark/50 shadow-2xl bg-primary-dark/80 backdrop-blur-sm text-center">
+                    <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-tight">
+                        Hi, I am <span class="text-accent-blue">Sandeep</span>,
+                    </h1>
+                    <h2 class="text-2xl sm:text-3xl lg:text-4xl text-light-text/80 font-medium mt-2">
+                        Web Developer
+                    </h2>
+                    <p class="mt-6 text-lg text-light-text/70">
+                        Crafting high-performance, full-stack web applications with the MERN stack.
+                    </p>
+                    <a href="#projects" class="mt-8 inline-block bg-accent-blue hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-xl shadow-lg transform hover:scale-[1.03] transition duration-300 ease-in-out">
+                        View Projects
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Separator -->
+        <div class="h-px bg-secondary-dark max-w-7xl mx-auto"></div>
+
+        <!-- 2. About Section -->
+        <section id="about" class="py-20 md:py-28">
+            <div class="container mx-auto px-4 max-w-7xl">
+                <h2 class="section-title text-4xl font-bold">About Me</h2>
+                <div class="grid lg:grid-cols-3 gap-12 items-center">
+                    <div class="lg:col-span-2 space-y-6 text-lg text-light-text/80">
+                        <p>
+                            Hello! I'm Sandeep, a dedicated <strong>Full-Stack Web Developer</strong> with a passion for building robust, scalable, and user-friendly applications. My expertise lies in the <strong>MERN stack</strong>, where I leverage modern JavaScript technologies to create seamless digital experiences from server to browser.
+                        </p>
+                        <p>
+                            I thrive on solving complex problems and turning ideas into polished, functional products. Whether it's designing efficient database schemas with <strong>MongoDB</strong>, creating powerful APIs using <strong>Node.js</strong> and <strong>Express.js</strong>, or developing dynamic, responsive front-ends with modern <strong>HTML, CSS, and JavaScript</strong>, I ensure every project is built with quality and performance in mind.
+                        </p>
+                        <p>
+                            I am constantly exploring new tools and techniques to stay ahead of the curve. I'm currently seeking challenging roles where I can contribute my full-stack skills and collaborate with innovative teams.
+                        </p>
+                    </div>
+                    <!-- Added Profile Image Placeholder -->
+                    <div class="lg:col-span-1 flex justify-center">
+                        <img 
+                            src="https://placehold.co/400x400/3b82f6/1e293b?text=Your+Profile+Photo" 
+                            alt="Sandeep's Profile Photo" 
+                            class="w-64 h-64 object-cover rounded-full border-4 border-accent-blue shadow-2xl transition duration-300 hover:scale-[1.05]"
+                            onerror="this.onerror=null;this.src='https://placehold.co/400x400/334155/f1f5f9?text=Sandeep'"
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Technologies/Skills Section (Updated with SVGs) -->
+        <section id="tech" class="py-20 md:py-28 bg-primary-dark">
+            <div class="container mx-auto px-4 max-w-7xl">
+                <h2 class="section-title text-4xl font-bold">My Core Stack</h2>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8">
+                    
+                    <!-- HTML5 (SVG) -->
+                    <div class="flex flex-col items-center p-6 bg-secondary-dark rounded-xl shadow-lg hover:shadow-2xl hover:scale-[1.05] transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12 text-orange-500 mb-3"><path d="M5 4h14l-1.5 15L12 21l-5.5-2z"/><path d="M9 8h6M9.5 12h5M9.5 16h5"/></svg>
+                        <span class="text-xl font-semibold">HTML5</span>
+                    </div>
+
+                    <!-- CSS3 (SVG) -->
+                    <div class="flex flex-col items-center p-6 bg-secondary-dark rounded-xl shadow-lg hover:shadow-2xl hover:scale-[1.05] transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12 text-blue-500 mb-3"><path d="M5 4h14l-1.5 15L12 21l-5.5-2z"/><path d="M9 8h6M9.5 12h5M9.5 16h5"/></svg>
+                        <span class="text-xl font-semibold">CSS3</span>
+                    </div>
+
+                    <!-- JavaScript (SVG) -->
+                    <div class="flex flex-col items-center p-6 bg-secondary-dark rounded-xl shadow-lg hover:shadow-2xl hover:scale-[1.05] transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 text-yellow-500 mb-3"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.17 14.5c-.3 0-.6-.08-.86-.24-.26-.16-.47-.38-.6-.65-.13-.27-.2-.58-.2-.93 0-.36.07-.66.2-.95.14-.28.34-.5.58-.65.24-.15.49-.22.75-.22.28 0 .54.07.76.2.23.13.4.3.5.5h-.95c-.06-.1-.17-.16-.3-.2s-.27-.06-.42-.06c-.14 0-.25.02-.34.07-.09.05-.16.12-.22.2-.06.08-.09.18-.09.28 0 .15.04.28.1.4.06.12.16.23.27.32.11.09.24.17.39.22.15.05.3.08.45.08.15 0 .28-.03.38-.1.1-.07.18-.17.22-.28h.95c-.08.2-.2.38-.38.53-.18.15-.39.26-.64.33-.25.07-.52.1-.8.1zm1.53-2.61c-.32 0-.58-.08-.77-.25-.19-.17-.28-.4-.28-.68 0-.27.08-.5.25-.67.17-.17.38-.26.65-.26.3 0 .56.09.76.28.19.18.28.42.28.7 0 .28-.09.52-.28.7-.19.18-.45.27-.78.27z"/></svg>
+                        <span class="text-xl font-semibold">JavaScript</span>
+                    </div>
+
+                    <!-- Express.js (SVG) -->
+                    <div class="flex flex-col items-center p-6 bg-secondary-dark rounded-xl shadow-lg hover:shadow-2xl hover:scale-[1.05] transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12 text-gray-400 mb-3"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                        <span class="text-xl font-semibold">Express.js</span>
+                    </div>
+
+                    <!-- Node.js (SVG) -->
+                    <div class="flex flex-col items-center p-6 bg-secondary-dark rounded-xl shadow-lg hover:shadow-2xl hover:scale-[1.05] transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12 text-green-500 mb-3"><path d="M16 8V6a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M2 12h20"/><path d="M7 16V8h10v8a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2Z"/></svg>
+                        <span class="text-xl font-semibold">Node.js</span>
+                    </div>
+
+                    <!-- MongoDB (SVG) -->
+                    <div class="flex flex-col items-center p-6 bg-secondary-dark rounded-xl shadow-lg hover:shadow-2xl hover:scale-[1.05] transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12 text-lime-500 mb-3"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12A9 3 0 0 0 21 12"/><path d="M3 19A9 3 0 0 0 21 19"/></svg>
+                        <span class="text-xl font-semibold">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Projects Section (Updated with specific links) -->
+        <section id="projects" class="py-20 md:py-28">
+            <div class="container mx-auto px-4 max-w-7xl">
+                <h2 class="section-title text-4xl font-bold">Featured Projects (6)</h2>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                    <!-- Project Card 1: PathFinder (LIVE PROJECT) -->
+                    <div class="bg-primary-dark rounded-2xl overflow-hidden shadow-xl border border-secondary-dark transform hover:-translate-y-1 transition duration-300">
+                        <img src="https://placehold.co/600x350/3b82f6/1e293b?text=Path+Finder+Visualizer" alt="Pathfinding Visualizer Project" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-2">Pathfinding Visualizer</h3>
+                            <p class="text-light-text/70 mb-4">An interactive tool built with vanilla JavaScript to visually demonstrate classic shortest path algorithms like Dijkstra's.</p>
+                            <div class="flex space-x-3 text-sm font-medium">
+                                <span class="px-3 py-1 bg-yellow-500/20 text-yellow-500 rounded-full">JavaScript</span>
+                                <span class="px-3 py-1 bg-orange-500/20 text-orange-500 rounded-full">HTML/CSS</span>
+                            </div>
+                            <div class="mt-4 flex space-x-4">
+                                <a href="https://sandeepyadav226028.github.io/PathFinder/" target="_blank" class="text-accent-blue hover:text-blue-400 font-medium flex items-center">
+                                    <i data-lucide="link" class="w-4 h-4 mr-1"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Sandeepyadav226028/PathFinder" target="_blank" class="text-light-text hover:text-gray-400 flex items-center">
+                                    <i data-lucide="github" class="w-4 h-4 mr-1"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2: TextUtilityTool (LIVE PROJECT) -->
+                    <div class="bg-primary-dark rounded-2xl overflow-hidden shadow-xl border border-secondary-dark transform hover:-translate-y-1 transition duration-300">
+                        <img src="https://placehold.co/600x350/334155/f1f5f9?text=Text+Utility+Tool" alt="Text Utility Application" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-2">Text Utility Tool</h3>
+                            <p class="text-light-text/70 mb-4">A simple yet powerful tool for manipulating text: converting case, counting words, and performing quick analysis for users.</p>
+                            <div class="flex space-x-3 text-sm font-medium">
+                                <span class="px-3 py-1 bg-accent-blue/20 text-accent-blue rounded-full">JavaScript</span>
+                                <span class="px-3 py-1 bg-orange-500/20 text-orange-500 rounded-full">Frontend</span>
+                            </div>
+                            <div class="mt-4 flex space-x-4">
+                                <!-- Using GitHub link for both for simplicity, since no live demo URL was provided for the tool -->
+                                <a href="https://github.com/Sandeepyadav226028/TextUtilityTool" target="_blank" class="text-accent-blue hover:text-blue-400 font-medium flex items-center">
+                                    <i data-lucide="link" class="w-4 h-4 mr-1"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Sandeepyadav226028/TextUtilityTool" target="_blank" class="text-light-text hover:text-gray-400 flex items-center">
+                                    <i data-lucide="github" class="w-4 h-4 mr-1"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 (FUTURE PROJECT PLACEHOLDER) -->
+                    <div class="bg-primary-dark rounded-2xl overflow-hidden shadow-xl border border-secondary-dark transform hover:-translate-y-1 transition duration-300">
+                        <img src="https://placehold.co/600x350/334155/f1f5f9?text=MERN+E-commerce+(Future)" alt="E-commerce Project" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-2">Full-Stack E-commerce Site</h3>
+                            <p class="text-light-text/70 mb-4">A planned complete platform utilizing the MERN stack for robust product management, authentication, and payments.</p>
+                            <div class="flex space-x-3 text-sm font-medium">
+                                <span class="px-3 py-1 bg-lime-500/20 text-lime-500 rounded-full">MongoDB</span>
+                                <span class="px-3 py-1 bg-green-500/20 text-green-500 rounded-full">Node/Express</span>
+                            </div>
+                            <div class="mt-4 flex space-x-4">
+                                <a href="https://github.com/Sandeepyadav226028" target="_blank" class="text-accent-blue hover:text-blue-400 font-medium flex items-center">
+                                    <i data-lucide="link" class="w-4 h-4 mr-1"></i> Coming Soon
+                                </a>
+                                <a href="https://github.com/Sandeepyadav226028" target="_blank" class="text-light-text hover:text-gray-400 flex items-center">
+                                    <i data-lucide="github" class="w-4 h-4 mr-1"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card 4 (FUTURE PROJECT PLACEHOLDER) -->
+                    <div class="bg-primary-dark rounded-2xl overflow-hidden shadow-xl border border-secondary-dark transform hover:-translate-y-1 transition duration-300">
+                        <img src="https://placehold.co/600x350/334155/f1f5f9?text=Realtime+Chat+App+(Future)" alt="Chat Application" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-2">Real-time Chat Application</h3>
+                            <p class="text-light-text/70 mb-4">A mock messenger application using web sockets for instant communication and user presence features.</p>
+                            <div class="flex space-x-3 text-sm font-medium">
+                                <span class="px-3 py-1 bg-yellow-500/20 text-yellow-500 rounded-full">Socket.io</span>
+                                <span class="px-3 py-1 bg-gray-400/20 text-gray-400 rounded-full">Node.js</span>
+                            </div>
+                            <div class="mt-4 flex space-x-4">
+                                <a href="https://github.com/Sandeepyadav226028" target="_blank" class="text-accent-blue hover:text-blue-400 font-medium flex items-center">
+                                    <i data-lucide="link" class="w-4 h-4 mr-1"></i> Coming Soon
+                                </a>
+                                <a href="https://github.com/Sandeepyadav226028" target="_blank" class="text-light-text hover:text-gray-400 flex items-center">
+                                    <i data-lucide="github" class="w-4 h-4 mr-1"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 5 (FUTURE PROJECT PLACEHOLDER) -->
+                    <div class="bg-primary-dark rounded-2xl overflow-hidden shadow-xl border border-secondary-dark transform hover:-translate-y-1 transition duration-300">
+                        <img src="https://placehold.co/600x350/334155/f1f5f9?text=Advanced+Dashboard+(Future)" alt="Authentication System" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-2">Advanced Admin Dashboard</h3>
+                            <p class="text-light-text/70 mb-4">A concept for a customizable dashboard demonstrating complex state management and responsive UI design.</p>
+                            <div class="flex space-x-3 text-sm font-medium">
+                                <span class="px-3 py-1 bg-purple-500/20 text-purple-500 rounded-full">Tailwind CSS</span>
+                                <span class="px-3 py-1 bg-yellow-500/20 text-yellow-500 rounded-full">Frontend Logic</span>
+                            </div>
+                            <div class="mt-4 flex space-x-4">
+                                <a href="https://github.com/Sandeepyadav226028" target="_blank" class="text-accent-blue hover:text-blue-400 font-medium flex items-center">
+                                    <i data-lucide="link" class="w-4 h-4 mr-1"></i> Coming Soon
+                                </a>
+                                <a href="https://github.com/Sandeepyadav226028" target="_blank" class="text-light-text hover:text-gray-400 flex items-center">
+                                    <i data-lucide="github" class="w-4 h-4 mr-1"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 6 (FUTURE PROJECT PLACEHOLDER) -->
+                    <div class="bg-primary-dark rounded-2xl overflow-hidden shadow-xl border border-secondary-dark transform hover:-translate-y-1 transition duration-300">
+                        <img src="https://placehold.co/600x350/334155/f1f5f9?text=Data+Visualization+(Future)" alt="Portfolio Template" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-2">Data Visualization Tool</h3>
+                            <p class="text-light-text/70 mb-4">A planned project focusing on integrating d3.js or similar libraries to render dynamic, interactive data charts.</p>
+                            <div class="flex space-x-3 text-sm font-medium">
+                                <span class="px-3 py-1 bg-lime-500/20 text-lime-500 rounded-full">D3.js (Future)</span>
+                                <span class="px-3 py-1 bg-orange-500/20 text-orange-500 rounded-full">HTML/CSS</span>
+                            </div>
+                            <div class="mt-4 flex space-x-4">
+                                <a href="https://github.com/Sandeepyadav226028" target="_blank" class="text-accent-blue hover:text-blue-400 font-medium flex items-center">
+                                    <i data-lucide="link" class="w-4 h-4 mr-1"></i> Coming Soon
+                                </a>
+                                <a href="https://github.com/Sandeepyadav226028" target="_blank" class="text-light-text hover:text-gray-400 flex items-center">
+                                    <i data-lucide="github" class="w-4 h-4 mr-1"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Contact Section -->
+        <section id="contact" class="py-20 md:py-28 bg-primary-dark">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h2 class="section-title text-4xl font-bold text-center mx-auto">Get in Touch</h2>
+
+                <div class="p-8 md:p-12 bg-secondary-dark rounded-3xl shadow-2xl">
+                    <p class="text-center text-xl text-light-text/90 mb-8">
+                        Ready to start a project? I'm experienced with the <strong>MERN stack backend</strong> (Node.js/Express/MongoDB) and can deliver robust solutions. Use the form below for a direct, reliable message.
+                    </p>
+
+                    <!-- Contact Form -->
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <!-- Name Field -->
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-light-text mb-1">Name</label>
+                                <input type="text" id="name" name="name" required
+                                    class="w-full px-4 py-3 bg-primary-dark border border-slate-600 rounded-lg focus:ring-accent-blue focus:border-accent-blue outline-none text-light-text form-input transition duration-150" placeholder="Your Full Name">
+                            </div>
+                            <!-- Email Field -->
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-light-text mb-1">Email</label>
+                                <input type="email" id="email" name="email" required
+                                    class="w-full px-4 py-3 bg-primary-dark border border-slate-600 rounded-lg focus:ring-accent-blue focus:border-accent-blue outline-none text-light-text form-input transition duration-150" placeholder="you@example.com">
+                            </div>
+                        </div>
+                        
+                        <!-- Project Type Dropdown -->
+                        <div>
+                            <label for="project_type" class="block text-sm font-medium text-light-text mb-1">Type of Project / Inquiry</label>
+                            <select id="project_type" name="project_type" required
+                                class="w-full px-4 py-3 bg-primary-dark border border-slate-600 rounded-lg focus:ring-accent-blue focus:border-accent-blue outline-none text-light-text form-select transition duration-150 appearance-none">
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="Full-Stack Development">Full-Stack Development (MERN)</option>
+                                <option value="Frontend Development">Frontend Development (HTML/CSS/JS)</option>
+                                <option value="Backend Development">Backend Development (Node/Express/Mongo)</option>
+                                <option value="General Inquiry">General Inquiry/Hiring</option>
+                            </select>
+                        </div>
+
+                        <!-- Message Field (CLEANED) -->
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-light-text mb-1">Your Message</label>
+                            <textarea id="message" name="message" rows="4" required
+                                class="w-full px-4 py-3 bg-primary-dark border border-slate-600 rounded-lg focus:ring-accent-blue focus:border-accent-blue outline-none text-light-text form-textarea transition duration-150" placeholder="Tell me about your project or opportunity..."></textarea>
+                        </div>
+                        
+                        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
+                            <button type="submit" id="submit-button" class="w-full sm:w-1/2 bg-accent-blue hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg transition duration-300 transform hover:scale-[1.02]">
+                                Send Message
+                            </button>
+                            <a href="https://www.linkedin.com/in/sandeepyadav9670/" target="_blank" id="hire-me-button" class="w-full sm:w-1/2 flex items-center justify-center border border-accent-blue text-accent-blue hover:bg-accent-blue hover:text-white font-bold py-3 px-6 rounded-xl transition duration-300 transform hover:scale-[1.02]">
+                                <i data-lucide="briefcase" class="w-5 h-5 mr-2"></i> Hire Me (View LinkedIn)
+                            </a>
+                        </div>
+                        <div id="form-message" class="mt-4 text-center text-sm font-medium hidden"></div>
+                    </form>
+                    
+                    <!-- Social Links -->
+                    <div class="mt-12 pt-8 border-t border-slate-700/50 text-center">
+                        <h4 class="text-xl font-semibold mb-4">Connect with Me</h4>
+                        <div class="flex justify-center space-x-6">
+                            
+                            <!-- GitHub Link -->
+                            <a href="https://github.com/Sandeepyadav226028" target="_blank" class="text-light-text hover:text-accent-blue transition duration-300 transform hover:scale-110" aria-label="GitHub Profile">
+                                <i data-lucide="github" class="w-8 h-8"></i>
+                            </a>
+
+                            <!-- LinkedIn Link -->
+                            <a href="https://www.linkedin.com/in/sandeepyadav9670/" target="_blank" class="text-light-text hover:text-accent-blue transition duration-300 transform hover:scale-110" aria-label="LinkedIn Profile">
+                                <i data-lucide="linkedin" class="w-8 h-8"></i>
+                            </a>
+                            
+                            <!-- Personal Website Link (Linking to GitHub as primary hub) -->
+                            <a href="https://github.com/Sandeepyadav226028" target="_blank" class="text-light-text hover:text-accent-blue transition duration-300 transform hover:scale-110" aria-label="Personal Website/Portfolio">
+                                <i data-lucide="globe" class="w-8 h-8"></i>
+                            </a>
+                        </div>
+                        <p class="text-sm text-light-text/60 mt-6">
+                            &copy; 2024 Sandeep. All rights reserved. Built with passion.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 2. LINK TO EXTERNAL JAVASCRIPT FILE -->
+    <script src="scripts.js"></script>
+
+</body>
+</html>
