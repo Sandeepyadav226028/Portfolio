@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep Yadav | Developer Portfolio</title>
+    <meta name="description" content="Sandeep Yadav — Developer & Software Engineer. Specializing in full-stack development, AI, and computer vision.">
+    <meta name="keywords" content="Sandeep Yadav, Developer, Software Engineer, Portfolio, Full Stack, AI, Computer Vision">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="bg-effects">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>SY<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">Let's Talk</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge animate-on-scroll">
+                    <span class="badge-dot"></span>
+                    <span>Available for opportunities</span>
+                </div>
+                <h1 class="hero-title animate-on-scroll">
+                    <span class="hero-greeting">Hello, I'm</span>
+                    <span class="hero-name">Sandeep<br>Yadav</span>
+                </h1>
+                <p class="hero-subtitle animate-on-scroll">
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="cursor">|</span>
+                </p>
+                <p class="hero-description animate-on-scroll">
+                    Passionate developer building intelligent solutions with clean code and modern technologies. Turning ideas into impactful digital experiences.
+                </p>
+                <div class="hero-actions animate-on-scroll">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="SandeepYadav_BCA.pdf" download="Sandeep_Yadav_CV.pdf" class="btn btn-secondary" id="resumeBtn">
+                        <span>Download CV</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <div class="hero-socials animate-on-scroll">
+                    <a href="https://github.com/Sandeepyadav226028" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/sandeepyadav226028" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:Sandeepyadav226028@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual animate-on-scroll">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-glow"></div>
+                    <div class="hero-avatar">
+                        <img src="Profile_Image.jpg" alt="Sandeep Yadav" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="floating-card card-1">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fab fa-node-js"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-database"></i>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-user"></i> About Me</span>
+                <h2 class="section-title">Crafting Digital <span class="gradient-text">Experiences</span></h2>
+                <p class="section-subtitle">A glimpse into who I am and what drives my passion for development</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-text animate-on-scroll">
+                    <p>I'm a dedicated <strong>Software Developer</strong> currently pursuing my <strong>BCA</strong>, with a passion for building innovative solutions that solve real-world problems. My journey in tech has led me to work with a diverse set of technologies — from building full-stack web applications to developing AI-powered systems.</p>
+                    <p>I love exploring the intersection of <strong>software engineering</strong> and <strong>artificial intelligence</strong>, creating tools that are both intelligent and user-friendly. Whether it's a smart surveillance system or a utility application, I aim to deliver quality and performance.</p>
+                    <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source, or brainstorming the next big idea.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Projects Built</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="9">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">GitHub Commits</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-info animate-on-scroll">
+                    <div class="info-card">
+                        <h3>Quick Info</h3>
+                        <ul class="info-list">
+                            <li>
+                                <span class="info-icon"><i class="fas fa-user"></i></span>
+                                <div>
+                                    <span class="info-label">Name</span>
+                                    <span class="info-value">Sandeep Yadav</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="info-icon"><i class="fas fa-graduation-cap"></i></span>
+                                <div>
+                                    <span class="info-label">Education</span>
+                                    <span class="info-value">BCA (In Progress)</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="info-icon"><i class="fas fa-map-marker-alt"></i></span>
+                                <div>
+                                    <span class="info-label">Location</span>
+                                    <span class="info-value">Lucknow, Uttar Pradesh, India</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="info-icon"><i class="fas fa-code"></i></span>
+                                <div>
+                                    <span class="info-label">Focus</span>
+                                    <span class="info-value">Full-Stack & AI</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-code"></i> Skills</span>
+                <h2 class="section-title">My <span class="gradient-text">Tech Stack</span></h2>
+                <p class="section-subtitle">Technologies and tools I work with to bring ideas to life</p>
+            </div>
+            <div class="skills-grid animate-on-scroll">
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-icon" style="--icon-color: #e34f26;">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <span class="skill-name">HTML5</span>
+                    <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                </div>
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-icon" style="--icon-color: #1572b6;">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <span class="skill-name">CSS3</span>
+                    <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                </div>
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-icon" style="--icon-color: #f7df1e;">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <span class="skill-name">JavaScript</span>
+                    <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon" style="--icon-color: #3776ab;">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <span class="skill-name">Python</span>
+                    <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon" style="--icon-color: #ed8b00;">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <span class="skill-name">Java</span>
+                    <div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon" style="--icon-color: #00599c;">
+                        <i class="fas fa-copyright"></i>
+                    </div>
+                    <span class="skill-name">C/C++</span>
+                    <div class="skill-bar"><div class="skill-progress" data-width="70%"></div></div>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon" style="--icon-color: #68a063;">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <span class="skill-name">Node.js</span>
+                    <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon" style="--icon-color: #000000;">
+                        <svg class="express-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                            <path d="M24 18.588a1.529 1.529 0 01-1.895-.72l-3.45-4.771-.5-.667-4.003 5.444a1.466 1.466 0 01-1.802.708l5.158-6.92-4.798-6.251a1.595 1.595 0 011.9.666l3.576 4.83 3.596-4.81a1.435 1.435 0 011.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 000 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27 1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.078 4.078 0 002.582-2.876c.207-.666.548-.78 1.174-.588a5.417 5.417 0 01-2.589 3.957 6.272 6.272 0 01-7.306-.933 6.575 6.575 0 01-1.64-3.858c0-.235-.08-.455-.134-.666A88.33 88.33 0 010 11.577zm1.127-.286h9.654c-.042-3.128-2.228-5.257-5.072-5.257-3.045 0-4.426 2.244-4.582 5.257z"/>
+                        </svg>
+                    </div>
+                    <span class="skill-name">Express.js</span>
+                    <div class="skill-bar"><div class="skill-progress" data-width="78%"></div></div>
+                </div>
+                <div class="skill-card" data-category="database">
+                    <div class="skill-icon" style="--icon-color: #47a248;">
+                        <svg class="mongo-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                            <path d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0111.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 003.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z"/>
+                        </svg>
+                    </div>
+                    <span class="skill-name">MongoDB</span>
+                    <div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div>
+                </div>
+                <div class="skill-card" data-category="database">
+                    <div class="skill-icon" style="--icon-color: #4479a1;">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <span class="skill-name">SQL/MySQL</span>
+                    <div class="skill-bar"><div class="skill-progress" data-width="72%"></div></div>
+                </div>
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-icon" style="--icon-color: #f05032;">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <span class="skill-name">Git/GitHub</span>
+                    <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                </div>
+                <div class="skill-card" data-category="ai">
+                    <div class="skill-icon" style="--icon-color: #5c3ee8;">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <span class="skill-name">OpenCV</span>
+                    <div class="skill-bar"><div class="skill-progress" data-width="70%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-rocket"></i> Projects</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Work</span></h2>
+                <p class="section-subtitle">A showcase of projects that demonstrate my skills and passion</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Sandeepyadav226028/AI-Powered-Smart-Survellance-System" target="_blank" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">OpenCV</span>
+                            <span class="project-tag">AI/ML</span>
+                            <span class="project-tag">Deep Learning</span>
+                        </div>
+                        <h3 class="project-title">AI-Powered Smart Surveillance System</h3>
+                        <p class="project-description">An intelligent surveillance system powered by AI and computer vision that detects and alerts on anomalous activities in real-time using deep learning models and OpenCV.</p>
+                        <a href="https://github.com/Sandeepyadav226028/AI-Powered-Smart-Survellance-System" target="_blank" class="project-cta">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Sandeepyadav226028/TextUtilityTool-Current" target="_blank" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">Express</span>
+                            <span class="project-tag">MongoDB</span>
+                        </div>
+                        <h3 class="project-title">TextUtilityTool</h3>
+                        <p class="project-description">A powerful text manipulation utility tool that provides various text operations like case conversion, word count, character analysis, and more with a clean modern interface.</p>
+                        <a href="https://github.com/Sandeepyadav226028/TextUtilityTool-Current" target="_blank" class="project-cta">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-graduation-cap"></i> Education</span>
+                <h2 class="section-title">Academic <span class="gradient-text">Journey</span></h2>
+                <p class="section-subtitle">My educational background and learning path</p>
+            </div>
+            <div class="timeline animate-on-scroll">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge">In Progress</div>
+                        <h3>Bachelor of Computer Applications (BCA)</h3>
+                        <p class="timeline-institution">Shri Ramswaroop College of Management and Engineering (Lucknow University)</p>
+                        <p class="timeline-year"><i class="fas fa-calendar-alt"></i> Aug 2024 – Aug 2027</p>
+                        <p class="timeline-desc">Studying core computer science subjects including Data Structures, Algorithms, Database Management, Web Development, and Software Engineering.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot completed"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge completed-badge">Completed (84.4%)</div>
+                        <h3>Intermediate, P.C.M with Computer Science</h3>
+                        <p class="timeline-institution">Allahabad Public School</p>
+                        <p class="timeline-year"><i class="fas fa-calendar-alt"></i> 2023 – 2024</p>
+                        <p class="timeline-desc">Completed higher secondary education with focus on Science, Mathematics, and Computer Science.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot completed"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge completed-badge">Completed (92.6%)</div>
+                        <h3>High School</h3>
+                        <p class="timeline-institution">Arvind Academy</p>
+                        <p class="timeline-year"><i class="fas fa-calendar-alt"></i> 2021 – 2022</p>
+                        <p class="timeline-desc">Completed high school with excellent academic performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-paper-plane"></i> Contact</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <p class="section-subtitle">Have a project in mind or just want to say hello? Let's connect!</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>Sandeepyadav226028@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Lucknow, UP, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/Sandeepyadav226028" target="_blank">Sandeepyadav226028</a>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://github.com/Sandeepyadav226028" target="_blank" class="contact-social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/sandeepyadav226028" target="_blank" class="contact-social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form animate-on-scroll" id="contactForm" action="https://formspree.io/f/mldpnjad" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project Collaboration">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>SY<span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">Designed & Built by <strong>Sandeep Yadav</strong></p>
+                <div class="footer-socials">
+                    <a href="https://github.com/Sandeepyadav226028" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/sandeepyadav226028" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:Sandeepyadav226028@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-copyright">&copy; 2026 Sandeep Yadav. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
